@@ -34,5 +34,14 @@ spring:
     compatibility-verifier:
       enabled: false
 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: https://app-reg.onrender.com/eureka/
+
 server:
   port: 8082
